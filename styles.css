@@ -47,7 +47,22 @@ nav li {
     padding: 5px; /* Adjust the padding as needed to control the size of the rounded square */
     border-radius: 10px; /* Make the border rounded */
 }
+.container {
+    display: flex;
+    flex-direction: column; /* Мобильді құрылғыларға ыңғайлы болу үшін */
+    align-items: center;
+    text-align: center;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr; /* Телефонда бір баған */
+}
 
+@media (min-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr; /* Үлкен экранда екі баған */
+    }
+}
 nav li a {
     color: #3498db; /* Blue text color */
     text-decoration: none; /* Optional: Remove underlines from links */
