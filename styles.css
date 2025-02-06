@@ -43,7 +43,11 @@ nav li a {
     text-decoration: none; /* Optional: Remove underlines from links */
 }
 
-
+body {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
 
 nav a {
     text-decoration: none;
